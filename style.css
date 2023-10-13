@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Karla';
+    background-color: hsl(204, 43%, 93%);
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+.container {
+    max-width: 650px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.card:nth-of-type(1) {
+    grid-column: 1/4;
+}
+
+.card {
+    background-color: white;
+    padding: 40px;
+}
+.cards1{
+    border-top-right-radius: 10px;
+    border-top-left-radius:10px;
+}
+.cards1 h2 {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.cards1 h3 {
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.cards1 p {
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+}
+
+.cards2 {
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    border-bottom-left-radius: 8px;
+    padding: 30px;
+}
+
+.cards2 h4 {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cards2 div {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.cards2 div p {
+    display: flex;
+    margin: 10px;
+    font-weight: 400;
+    opacity: 40%;
+}
+
+.cards2 p {
+    font-weight: 400;
+    opacity: 90%;
+    margin-bottom: 40px;
+}
+
+.cards2 a {
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.15);
+    margin-bottom: 10px;
+}
+
+.cards3 {
+    padding: 30px;
+    background-color: hsl(179, 56%, 52%);
+    color: white;
+    border-bottom-right-radius: 10px;
+}
+
+.cards3 div {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.cards3 p {
+    text-align: left;
+    width: 85%;
+    font-weight: 200;
+    opacity: 80%;
+}
+
+@media(max-width:500px){
+    .container{
+        max-width: 400px;
+        display: flex;
+    }
+    .cards2{
+        border-bottom-left-radius: 0%;
+    }
+    .cards3{
+        border-bottom-left-radius: 10px;
+    }
+}
